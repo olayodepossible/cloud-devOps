@@ -119,7 +119,7 @@ jobs:
             list-exports --query "Exports[?Name==\`PipelineID\`].Value" \
             --no-paginate --output text > ~/textfile.txt
       - persist_to_workspace:
-          root: D:/Users/olatomi/Documents/project/aws-devOps/aws-challenges/
+          root: ~/
           paths:
             - textfile.txt
 
